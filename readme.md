@@ -23,6 +23,7 @@ Agenda:
 <details>
   <summary>What I will (and won't be) covering</summary>
   
+- Goal: Provide an overview and equip you to learn more yourself
 - Python basics
 - Rectangular data with `pandas`
 - ~~Object Oriented programming~~
@@ -40,5 +41,5 @@ Agenda:
 <details>
   <summary>Further work</summary>
   
-- See
+- [THE Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 </details>
