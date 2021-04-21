@@ -61,3 +61,5 @@ pinball[pinball['score'] > 50]
 
 pinball.loc[lambda x: x['score'] > 50]
 
+
+# ## Connecting to DW

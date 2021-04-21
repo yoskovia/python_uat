@@ -2,8 +2,6 @@
 # coding: utf-8
 
 # # Python Basics
-# 
-# This is a jupyter notebook environment and it allows us to run Python code and see the results all within this page. This is not the only way to edit / run python code. 
 
 # In[ ]:
 

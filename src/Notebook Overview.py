@@ -13,7 +13,7 @@
 print('Hello!')
 
 
-# Variables that you assign in one cell are available to all other cells.
+# Variables that you assign in one cell are available to all other cells, but not to other notebooks (usually).
 
 # In[ ]:
 
@@ -31,7 +31,7 @@ x
 
 # --- 
 
-# You can also start a cell with `!` and use a code cell as a terminal (cmd or powershell, this notebook should be using cmd)
+# ### You can also start a cell with `!` and use a code cell as a terminal (cmd or powershell, this notebook should be using cmd)
 
 # In[ ]:
 
@@ -43,4 +43,18 @@ get_ipython().system('dir')
 
 
 get_ipython().system('jupyter nbconvert *.ipynb --to python --output-dir=src/')
+
+
+# ### You can also run javascript, R, SQL, and lots of other languages using this interface.
+
+# In[ ]:
+
+
+get_ipython().run_cell_magic('javascript', '', "document.title='Tab Updated!'")
+
+
+# In[ ]:
+
+
+
 

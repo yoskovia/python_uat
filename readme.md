@@ -21,9 +21,10 @@ Agenda:
 
 
 <details>
-  <summary>What I will (and won't be) covering</summary>
-  
+  <summary>What I will (and won't) be covering</summary>
+
 - Goal: Provide an overview and equip you to learn more yourself
+- Jupyter Notebook environment
 - Python basics
 - Rectangular data with `pandas`
 - ~~Object Oriented programming~~
@@ -39,7 +40,11 @@ Agenda:
 
 
 <details>
-  <summary>Further work</summary>
+  <summary>Reference</summary>
   
 - [THE Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+- [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)
+- [10 Minutes to Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
+- [sklearn User Guide](https://scikit-learn.org/stable/user_guide.html)
 </details>
+
