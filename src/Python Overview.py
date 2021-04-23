@@ -45,7 +45,7 @@ dir(my_name)
 
 
 # upper looks like what I want to do, I'd like to read more about it.
-help(str.upper)
+help(my_name.upper)
 
 
 # In[ ]:
@@ -63,13 +63,13 @@ my_name
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'str.isupper')
+get_ipython().run_line_magic('pinfo', 'my_name.isupper')
 
 
 # In[ ]:
 
 
-help(str.isupper)
+help(my_name.isupper)
 
 
 # In[ ]:
