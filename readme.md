@@ -46,10 +46,11 @@ Agenda:
   <summary>What I will (and won't) be covering</summary>
 
 - Yes
-  - Give you tools to learn more and get help
+  - **Key Outcome:** Give you tools to learn more and find help
   - Jupyter Notebook environment
   - Python basics
   - Rectangular data with `pandas`
+  - Walkthrough a current project I'm working on
 - No
   - WhIcH oNe Is BeTtEr (R vs. SAS vs. Python)
   - Modeling
@@ -71,9 +72,10 @@ Agenda:
 </details>
 
 <details>
-  <summary>Dive into the details</summary>
+  <summary>Demo</summary>
   
 - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/yoskovia/python_uat/HEAD)
+- Project IRL
 </details>
 
 
