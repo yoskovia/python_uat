@@ -3,6 +3,13 @@
 
 # # Manipulating Data with `pandas`
 
+# ### Topic Agenda 
+# 
+# - Dataframes and their attributes
+# - Subsetting
+# - Aggregating
+# - Reading external files
+
 # In[ ]:
 
 
@@ -47,13 +54,30 @@ pinball.rename(columns={'name':'persons name'})
 # In[ ]:
 
 
-pinball['score'] > 50
+pinball
+
+
+# Select a single column using []
+
+# In[ ]:
+
+
+pinball['score']
 
 
 # In[ ]:
 
 
-pinball[pinball['score'] > 50]
+pinball['score'] > 50
+
+
+# Pass a boolean array into the index in order to subset
+
+# In[ ]:
+
+
+bool_array = pinball['score'] > 50
+pinball[bool_array]
 
 
 # In[ ]:
@@ -61,5 +85,7 @@ pinball[pinball['score'] > 50]
 
 pinball.loc[lambda x: x['score'] > 50]
 
+
+# ## Reading External Files
 
 # ## Connecting to DW

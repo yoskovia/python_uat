@@ -27,7 +27,7 @@ x = 10
 x
 
 
-# **Warning!** When using a Jupyter notebook, simply running a cell with a variable in it will display the value below. However, this behavior is not always the case when using other environments besides a Jupyter Notebook.
+# **Warning!** When using a Jupyter notebook, simply running a cell with a variable in it will display the value below. However, this behavior is not always the case when using other Python environments besides a Jupyter Notebook.
 
 # --- 
 
@@ -51,10 +51,4 @@ get_ipython().system('jupyter nbconvert *.ipynb --to python --output-dir=src/')
 
 
 get_ipython().run_cell_magic('javascript', '', "document.title='Tab Updated!'")
-
-
-# In[ ]:
-
-
-
 

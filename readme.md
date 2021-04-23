@@ -46,11 +46,10 @@ Agenda:
   <summary>What I will (and won't) be covering</summary>
 
 - Yes
-  - Provide an overview and equip you to learn more yourself
+  - Give you tools to learn more and get help
   - Jupyter Notebook environment
   - Python basics
   - Rectangular data with `pandas`
-  - Plotting with `seaborn`
 - No
   - WhIcH oNe Is BeTtEr (R vs. SAS vs. Python)
   - Modeling

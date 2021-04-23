@@ -3,6 +3,15 @@
 
 # # Python Basics
 
+# ### Topic Agenda
+# - Getting Help
+# - Operations
+# - Lists
+# - Loops
+# - Dictionaries
+# - Conditional Logic
+# - Functions
+
 # In[ ]:
 
 
@@ -10,45 +19,32 @@
 print('Hello world!')
 
 
-# ### In Python you create variables using the `=` sign. 
+# ## Getting Help
+
+# Sample situation: I'd like to capitalize all the letters in a variable.
+# 
+# - `help(str)` will print out the help page for an object
+# - `type(variable)` will show the type of a `variable`
+# - `dir(variable)` will show you the things you can do with `variable`
 
 # In[ ]:
 
 
 my_name = 'Anthony'
-my_name
-
-
-# ### Use the `type` function to determine the type of a variable
-# - `my_name` is a variable of type `str` (String)
-
-# In[ ]:
-
-
 type(my_name)
 
 
 # In[ ]:
 
 
-str.count
+# What operations can I perform on my_name?
+dir(my_name)
 
 
 # In[ ]:
 
 
-help(str.count)
-
-
-# In[ ]:
-
-
-dir(str) # to see all available methods
-
-
-# In[ ]:
-
-
+# upper looks like what I want to do, I'd like to read more about it.
 help(str.upper)
 
 
@@ -73,6 +69,12 @@ get_ipython().run_line_magic('pinfo', 'str.isupper')
 # In[ ]:
 
 
+help(str.isupper)
+
+
+# In[ ]:
+
+
 my_name.isupper()
 
 
@@ -80,12 +82,6 @@ my_name.isupper()
 
 
 '32'.zfill(4)
-
-
-# In[ ]:
-
-
-get_ipython().run_line_magic('pinfo', 'str')
 
 
 # ### Python is a case sensitive language, so the following will not work.
@@ -111,7 +107,7 @@ my_number
 type(my_number) # int = integer
 
 
-# ## Operations
+# ## Operations - Python As A Calculator
 
 # In[ ]:
 
@@ -155,12 +151,12 @@ my_number // 3
 my_number % 2 # Mod
 
 
-# ## Lists
+# ## Lists - Collecting similar variables
 
 # In[ ]:
 
 
-my_list = ['apples', 'oranges']
+fruits = ['apples', 'oranges']
 
 
 # Lists can contain different types
@@ -174,20 +170,28 @@ another_list = ['name', 500]
 # In[ ]:
 
 
-my_list[0]
+another_list
 
 
 # In[ ]:
 
 
-my_list[1]
+fruits[0]
 
 
 # In[ ]:
 
 
-len(my_list)
+fruits[1]
 
+
+# In[ ]:
+
+
+len(fruits)
+
+
+# ## Loops - Doing something multiple times
 
 # In[ ]:
 
@@ -199,27 +203,28 @@ for name in ['anthony', 'mittens']:
 # In[ ]:
 
 
-# Intermediate topic: List comprehensions
-[name.upper() for name in ['anthony', 'mittens']]
-
-
-# ## Loops
-
-# In[ ]:
-
-
 all_names = ['foo', 'bar']
 for name in all_names:
     # name could be anything, but 'all_names' must be a variable
     print(name)
 
 
-# ## Dictionaries
+# ## What if I want to apply a function / method to each element of a list?
+
+# In[ ]:
+
+
+# Intermediate topic: List comprehensions
+[name.upper() for name in ['anthony', 'mittens']]
+
+
+# ## Dictionaries - Collecting similar variables with names
 
 # In[ ]:
 
 
 my_dict = {'name':'anthony', 'favorite food':'gorditas'}
+my_dict
 
 
 # In[ ]:
@@ -234,7 +239,7 @@ my_dict['name']
 my_dict['favorite food']
 
 
-# Structures can be nested
+# ### Structures can be nested
 
 # In[ ]:
 
@@ -264,7 +269,7 @@ nested['cars']
 nested['title']
 
 
-# ### Making decisions
+# ## Conditional Logic: Making decisions
 
 # In[ ]:
 
@@ -320,3 +325,5 @@ if age in [10, 20, 30]:
 else:
     print('Your age isnt in the list')
 
+
+# ## Functions
