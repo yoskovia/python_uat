@@ -103,9 +103,20 @@ print('Output Frame')
 
 import seaborn as sns
 # sns.get_dataset_names()
+gammas = sns.load_dataset('gammas').head(20)
+display(gammas)
+# Styler 
+gammas.style.set_properties(**{
+                            'background-color': 'green',
+                            'color': 'white'
+})
+
+
+# In[ ]:
+
+
 (
-    sns.load_dataset('gammas')
-    .head(20)
+    gammas
     .sort_values(by='BOLD signal')
     .style.bar(subset='BOLD signal', align='mid', color=['green', 'red'])
 )
@@ -114,7 +125,31 @@ import seaborn as sns
 # In[ ]:
 
 
+def highlight_max(s):
+    """
+    highlight the maximum in a Series yellow.
+    """
+    is_max = s == s.max()
+    return ['background-color: green' if v else '' for v in is_max]
 
+def highlight_min(s):
+    """
+    highlight the minimum in a Series yellow.
+    """
+    is_min = s == s.min()
+    return ['background-color: red' if v else '' for v in is_min]
+
+(
+    gammas.style
+    .apply(highlight_max, subset=['subject', 'BOLD signal'])
+    .apply(highlight_min, subset=['subject', 'BOLD signal'])
+)
+
+
+# In[ ]:
+
+
+gammas.style.set_caption('Here is some text that describes the table.')
 
 
 # In[ ]:
