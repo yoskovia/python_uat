@@ -8,6 +8,8 @@
 # In[ ]:
 
 
+import pandas as pd
+
 dat = {'AMERICAN_INDIAN_ENROLLMENT': 'American Indian',
        'ASIAN_ENROLLMENT': 'Asian',
        'AFRICAN_AMERICAN_ENROLLMENT': 'African American',
@@ -74,8 +76,6 @@ help(clean_name)
 
 # In[ ]:
 
-
-import pandas as pd
 
 wanted_animals = ['cats', 'dogs']
 
