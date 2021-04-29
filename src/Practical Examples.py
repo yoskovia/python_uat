@@ -182,28 +182,18 @@ gammas.style.set_caption('Here is some text that describes the table.')
 
 
 
-# In[ ]:
-
-
-
-
+# ## SQL -> pd.DataFrame
 
 # In[ ]:
 
 
-
+df = rs('my_file.sql', conn)
 
 
 # In[ ]:
 
 
-
-
-
-# In[ ]:
-
-
-
+df = pd.read_sql('select * from Table')
 
 
 # In[ ]:
@@ -212,11 +202,7 @@ gammas.style.set_caption('Here is some text that describes the table.')
 
 
 
-# In[ ]:
-
-
-
-
+# ## Generating Fake Data
 
 # In[ ]:
 
@@ -227,13 +213,48 @@ gammas.style.set_caption('Here is some text that describes the table.')
 # In[ ]:
 
 
+from faker import Faker
+import numpy as np
 
+fake = Faker()
+
+[Faker().name() for _ in np.arange(5)]
 
 
 # In[ ]:
 
 
+print([x for x in dir(fake) if not x.startswith('_')][:20])
 
+
+# In[ ]:
+
+
+[Faker().email() for _ in np.arange(5)]
+
+
+# In[ ]:
+
+
+[Faker().ipv4() for _ in np.arange(5)]
+
+
+# In[ ]:
+
+
+[Faker().street_address() for _ in np.arange(5)]
+
+
+# In[ ]:
+
+
+[Faker().sentence() for _ in np.arange(5)]
+
+
+# In[ ]:
+
+
+[Faker().job() for _ in np.arange(5)]
 
 
 # In[ ]:

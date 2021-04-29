@@ -50,10 +50,10 @@ Agenda:
   - Jupyter Notebook environment
   - Python basics
   - Rectangular data with `pandas`
-  - Walkthrough a current project I'm working on
+  - Practical examples
 - No
   - WhIcH oNe Is BeTtEr (R vs. SAS vs. Python)
-  - Modeling
+  - Setting up a Python environment
   - Version control (git)
 </details>
 
@@ -78,6 +78,18 @@ Agenda:
 - Project IRL
 </details>
 
+<details>
+  <summary>Potential Future Topics</summary>
+  
+- Version controlling notebooks
+- sklearn
+- statsmodels
+- seaborn
+- matplotlib
+- BeautifulSoup
+- Faker for random everything
+
+</details>
 
 <details>
   <summary>Reference</summary>

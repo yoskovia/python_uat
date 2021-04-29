@@ -18,8 +18,6 @@ print('Hello world!')
 
 # ## Getting Help
 
-# Sample situation: I'd like to capitalize all the letters in a variable.
-# 
 # - `help(str)` will print out the help page for an object
 # - `type(variable)` will show the type of a `variable`
 # - `dir(variable)` will show you the things you can do with `variable`
@@ -28,6 +26,7 @@ print('Hello world!')
 
 
 my_name = 'Anthony'
+# What is the type of my_name?
 type(my_name)
 
 
@@ -41,7 +40,7 @@ dir(my_name)
 # In[ ]:
 
 
-# upper looks like what I want to do, I'd like to read more about it.
+# upper looks interesting, I'd like to read more about it.
 help(my_name.upper)
 
 
@@ -72,7 +71,26 @@ my_name.isupper()
 # In[ ]:
 
 
-'32'.zfill(4)
+'32'.zfill(5)
+
+
+# In[ ]:
+
+
+foo = 1
+foo.zfill(2)
+
+
+# In[ ]:
+
+
+str(foo).zfill(2)
+
+
+# In[ ]:
+
+
+int('01')
 
 
 # ### Python is a case sensitive language, so the following will not work.
