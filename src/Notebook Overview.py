@@ -27,16 +27,24 @@ x = 10
 x
 
 
-# **Warning!** When using a Jupyter notebook, simply running a cell with a variable in it will display the value below. However, this behavior is not always the case when using other Python environments besides a Jupyter Notebook.
+# **Warning!** When using a Jupyter notebook, if the last line of a cell is simply the name of a variable, it will automatically display the value below the cell. When creating `.py` files, you will need to call `print(my_var)` in order to see the variable.
 
 # --- 
 
-# ### You can also start a cell with `!` and use a code cell as a terminal (cmd or powershell, this notebook should be using cmd)
+# You can also start a cell with `!` and use the cell as a terminal (cmd or powershell, this notebook should be using cmd)
 
 # In[ ]:
 
 
 get_ipython().system('dir')
+
+
+# You can also save the output of a terminal command into a python variable.
+
+# In[ ]:
+
+
+dir_output = get_ipython().getoutput('dir')
 
 
 # In[ ]:
@@ -45,7 +53,7 @@ get_ipython().system('dir')
 get_ipython().system('jupyter nbconvert *.ipynb --to python --output-dir=src/')
 
 
-# ### You can also run javascript, R, SQL, and lots of other languages using this interface.
+# You can also run javascript, R, SQL, and lots of other languages using this interface.
 
 # In[ ]:
 

@@ -1,9 +1,21 @@
 # Python Overview 
 
-Agenda:
+## About this repo
+
+
+- `Notebook Overview.ipynb`: Information about the Jupyter notebook environment
+- `Python Basics.ipynb`: Demonstrating basic Python functionality
+- `Pandas Overview.ipynb`: Overview of the `pandas` module for data manipulation
+- `Practical Examples.ipynb`: Some useful scenarios in Python
+- `src/`: Folder containing raw python code created from the `.ipynb` files
+- `requirements.txt`: List of python modules needed in order to run the `.ipynb` files in Binder
+
+---
+
+## Agenda:
 
 <details>
-  <summary>What is it?</summary>
+  <summary>What is Python?</summary>
   
 - General purpose programming language
 - Readable and beginner friendly
@@ -12,10 +24,10 @@ Agenda:
 </details>
 
 <details>
-  <summary>What can it be used for?</summary>
+  <summary>What can Python be used for?</summary>
 
 - Manipulating data files (.csv, .xlsx, .json, .accdb, SQL DB)
-- Solving mathematical equations / derivatives / integration
+- Solving equations / factoring / derivatives / integration
 - Web scraping
 - Trading stocks (dangerous)
 - Automation
@@ -26,6 +38,7 @@ Agenda:
 <details>
   <summary>Advantages</summary>
 
+- Batteries included
 - Concise syntax
 - OS neutral
   - Mac / Windows / Linux
@@ -68,14 +81,12 @@ Agenda:
     - Bitcoin logger
   - Online resources (see `Reference`)
   - Not an expert and not a software developer
-    - Not a nitpicker (see online community)
 </details>
 
 <details>
   <summary>Demo</summary>
   
 - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/yoskovia/python_uat/HEAD)
-- Project IRL
 </details>
 
 <details>
@@ -87,16 +98,7 @@ Agenda:
 - seaborn
 - matplotlib
 - BeautifulSoup
-- Faker for random everything
+- Testing code with doctest
 
-</details>
-
-<details>
-  <summary>Reference</summary>
-  
-- [THE Python Tutorial](https://docs.python.org/3/tutorial/index.html)
-- [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)
-- [10 Minutes to Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
-- [sklearn User Guide](https://scikit-learn.org/stable/user_guide.html)
 </details>
 
