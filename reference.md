@@ -4,6 +4,7 @@ Some helpful resources to get started.
 
 ### General Python
 - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+- [Standard Library](https://docs.python.org/3/tutorial/stdlib.html)
 - [w3schools](https://www.w3schools.com/python/)
 - [tutorialspoint](https://www.tutorialspoint.com/python/index.htm)
 - [Managing packages with `pip`](https://realpython.com/what-is-pip/)
