@@ -2,10 +2,12 @@
 # coding: utf-8
 
 # # Python Basics
-
-# ### Topic Agenda
+# 
+# This notebook contains examples of basic Python syntax.
+# 
+# ### Topics
 # - Getting Help
-# - Operations
+# - Basic Operations
 # - Lists
 # - Functions
 
@@ -121,12 +123,13 @@ print((15 / 15) ** 2)
 print(15 % 2) # Mod
 
 
-# ## Lists - Collecting similar variables
+# ## Lists
 
 # In[ ]:
 
 
 fruits = ['apples', 'oranges']
+fruits
 
 
 # In[ ]:
@@ -168,7 +171,7 @@ fruits[1]
 len(fruits)
 
 
-# ## Applying a function to each element of a list
+# ## Doing something to each element of a list
 
 # In[ ]:
 
@@ -181,16 +184,16 @@ len(fruits)
 # In[ ]:
 
 
-def add_two(a, b):
+def add_them(a, b):
     return a + b
 
-add_two(1, 3)
+add_them(1, 3)
 
 
 # In[ ]:
 
 
-def add_two(a, b):
+def add_them(a, b):
     """
     Add two numbers.
     
@@ -207,17 +210,23 @@ def add_two(a, b):
 # In[ ]:
 
 
-add_two(1, 2)
+add_them(1, 2)
 
 
 # In[ ]:
 
 
-print(add_two.__doc__)
+print(add_them.__doc__)
 
 
 # In[ ]:
 
 
-help(add_two)
+help(add_them)
+
+
+# In[ ]:
+
+
+
 

@@ -165,3 +165,9 @@ pinball[bool_array]
 
 pinball.loc[lambda x: x['score'] > 50]
 
+
+# In[ ]:
+
+
+
+
