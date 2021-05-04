@@ -2,17 +2,29 @@
 
 ## About this repo
 
-
-- `Notebook Overview.ipynb`: Information about the Jupyter notebook environment
-- `Python Basics.ipynb`: Demonstrating basic Python functionality
-- `Pandas Overview.ipynb`: Overview of the `pandas` module for data manipulation
-- `Practical Examples.ipynb`: Some useful scenarios in Python
-- `src/`: Folder containing raw python code created from the `.ipynb` files
+- `notebooks/`
+  - `src/`: Folder containing raw python code created from the `.ipynb` files
+  - `Notebook Overview.ipynb`: Information about the Jupyter notebook environment
+  - `Pandas Overview.ipynb`: Overview of the `pandas` module for data manipulation
+  - `Practical Examples.ipynb`: Some useful scenarios in Python
+  - `Python Basics.ipynb`: Demonstrating basic Python functionality
+  - `blank.ipynb`: Blank notebook to experiment with
+- `readme.md`: You're reading it!
+- `reference.md`: List of helpful tutorials / resources to get started with Python
 - `requirements.txt`: List of python modules needed in order to run the `.ipynb` files in Binder
 
 ---
 
 ## Agenda:
+
+<details>
+  <summary>Why are we here?</summary>
+
+- UAT Process  
+  - "Are the numbers in this table the same as another table"
+  - AAs have been doing this in Excel
+- I shared how I was doing it (Python) and there was some interest on my team to learn so I figured I'd see if anyone wanted to join.
+</details>
 
 <details>
   <summary>What is Python?</summary>
@@ -59,11 +71,12 @@
   <summary>What I will (and won't) be covering</summary>
 
 - Yes
-  - **Key Outcome:** Give you tools to learn more and find help
+  - Give you an idea of the types of problems Python can solve and be helpful with
   - Jupyter Notebook environment
   - Python basics
   - Rectangular data with `pandas`
   - Practical examples
+  - Resources to learn more
 - No
   - WhIcH oNe Is BeTtEr (R vs. SAS vs. Python)
   - Setting up a Python environment
