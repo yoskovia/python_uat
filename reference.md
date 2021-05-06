@@ -19,6 +19,8 @@ Some helpful resources to get started.
 - [Comparing pandas and sql](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html#compare-with-sql)
 - [pandas on stack overflow](https://stackoverflow.com/questions/tagged/pandas)
     - If you have a question about how to do something / a weird error message, I can almost guarantee someone has asked about it here.
+- [Random data with Faker](https://faker.readthedocs.io/en/master/)
+- [Table Styling](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)
 
 ### Visualizing 
 - [seaborn](https://seaborn.pydata.org/tutorial.html)

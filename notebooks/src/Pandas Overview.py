@@ -66,7 +66,7 @@ pinball['score']
 # In[ ]:
 
 
-dir(pd.Series)
+[x for x in dir(pd.Series) if not x.startswith('_')]
 
 
 # Online help [here](https://pandas.pydata.org/docs/reference/api/pandas.Series.describe.html).
@@ -80,7 +80,7 @@ help(pd.Series.describe)
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo2', 'pd.Series.to_clipboard')
+help(pd.Series.to_clipboard)
 
 
 # In[ ]:
@@ -110,7 +110,7 @@ pinball.describe() # Show all descriptive statistics
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'pd.Series.duplicated')
+help(pd.Series.duplicated)
 
 
 # In[ ]:
@@ -128,14 +128,9 @@ pinball[ pinball['score'].duplicated(keep=False) ]
 # In[ ]:
 
 
-pinball[ pinball['score'].duplicated(keep=False) ]
-
-
-# In[ ]:
-
-
 dups = pinball[ pinball['score'].duplicated(keep=False) ]
 
+# Throw error if a condition is false
 assert len(dups) == 0, 'Stop!!! There are duplicate values!!'
 
 
@@ -169,5 +164,32 @@ pinball.loc[lambda x: x['score'] > 50]
 # In[ ]:
 
 
+pinball
 
+
+# In[ ]:
+
+
+games = pd.DataFrame({
+    'name':['anthony', 'tom'],
+    'fav_color':['red', 'blue']
+})
+
+
+# In[ ]:
+
+
+pd.merge(pinball, games, how='left', on='name')
+
+
+# In[ ]:
+
+
+pd.merge(pinball, games, how='inner', on='name')
+
+
+# In[ ]:
+
+
+pd.merge(pinball, games, how='left', on='name', indicator=True)
 

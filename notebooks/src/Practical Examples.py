@@ -32,7 +32,7 @@ df
 'AMERICAN_INDIAN_ENROLLMENT'.replace('_', ' ').title().replace(' Enrollment', '')
 
 
-# Perform the above processing to each row of the dataset with `apply`.
+# Apply the above processing to each row of the dataset with `apply`.
 
 # In[ ]:
 
@@ -48,9 +48,8 @@ df['my_name'].apply(lambda x: x.replace('_', ' ').title().replace(' Enrollment',
 def clean_name(name):
     """ Clean up race names. 
     
-    Example:
-        clean_name('HAWAIIAN_ENROLLMENT')
-        >>> Hawaiian
+    >>> clean_name('HAWAIIAN_ENROLLMENT')
+    Hawaiian
     """
     if name == 'TWO_OR_MORE_RACES_ENROLLMENT':
         return 'Two or More Races'
@@ -63,13 +62,19 @@ def clean_name(name):
 # In[ ]:
 
 
+help(clean_name)
+
+
+# In[ ]:
+
+
 df['my_name'].apply(clean_name)
 
 
 # In[ ]:
 
 
-help(clean_name)
+df.assign(cleaned = lambda x: x['my_name'].apply(clean_name))
 
 
 # ### Multiple String Or: Find records where `animals` contains any of the strings in `wanted_animals`
@@ -82,12 +87,14 @@ wanted_animals = ['cats', 'dogs']
 df = pd.DataFrame({
     'name':['bob', 'jim', 'steve'],
     'animals':['cats, dogs, turtles', 'dogs', 'turtles']
-}); 
-
-print('Input Frame')
+});
 display(df)
-print(f'Finding: {wanted_animals}')
 
+
+# In[ ]:
+
+
+print(f'Finding: {wanted_animals}')
 print('Output Frame')
 (
     df.loc[lambda x: x['animals'].apply(lambda x: 
@@ -104,9 +111,9 @@ print('Output Frame')
 import seaborn as sns
 # sns.get_dataset_names()
 gammas = sns.load_dataset('gammas').head(20)
-display(gammas)
+display(gammas.head())
 # Styler 
-gammas.style.set_properties(**{
+gammas.head().style.set_properties(**{
                             'background-color': 'green',
                             'color': 'white'
 })
@@ -127,14 +134,14 @@ gammas.style.set_properties(**{
 
 def highlight_max(s):
     """
-    highlight the maximum in a Series yellow.
+    highlight the maximum in a Series green.
     """
     is_max = s == s.max()
     return ['background-color: green' if v else '' for v in is_max]
 
 def highlight_min(s):
     """
-    highlight the minimum in a Series yellow.
+    highlight the minimum in a Series red.
     """
     is_min = s == s.min()
     return ['background-color: red' if v else '' for v in is_min]
@@ -149,25 +156,7 @@ def highlight_min(s):
 # In[ ]:
 
 
-gammas.style.set_caption('Here is some text that describes the table.')
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
+disp_tab = gammas.style.set_caption('Here is some text that describes the table.')
 
 
 # In[ ]:
@@ -207,12 +196,6 @@ df = pd.read_sql('select * from Table')
 # In[ ]:
 
 
-
-
-
-# In[ ]:
-
-
 from faker import Faker
 import numpy as np
 
@@ -224,7 +207,7 @@ fake = Faker()
 # In[ ]:
 
 
-print([x for x in dir(fake) if not x.startswith('_')][:20])
+[op for op in dir(fake) if not op.startswith('_')]
 
 
 # In[ ]:
