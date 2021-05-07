@@ -20,10 +20,7 @@
 <details>
   <summary>Why are we here?</summary>
 
-- UAT Process  
-  - "Are the numbers in this table the same as another table"
-  - AAs have been doing this in Excel
-- I shared how I was doing it (Python) and there was some interest on my team to learn so I figured I'd see if anyone wanted to join.
+- Interest from my team after I demonstrated the UAT process in Python 
 </details>
 
 <details>
@@ -61,7 +58,7 @@
   <summary>Gotchas / Drawbacks </summary>
 
 - "Slow" / difficult to manage memory
-  - **Not an issue for the practical things I'll be outlining**
+  - Not really an issue for the practical things I'll be outlining
 - Dynamically typed
   - Less explicit
 </details>
@@ -71,16 +68,15 @@
   <summary>What I will (and won't) be covering</summary>
 
 - Yes
-  - Give you an idea of the types of problems Python can solve and be helpful with
+  - Demonstrate the types of problems Python can solve and be helpful with
   - Jupyter Notebook environment
   - Python basics
   - Rectangular data with `pandas`
   - Practical examples
   - Resources to learn more
 - No
-  - WhIcH oNe Is BeTtEr (R vs. SAS vs. Python)
   - Setting up a Python environment
-  - Version control (git)
+  - In depth explanation of python syntax
 </details>
 
 
@@ -89,10 +85,9 @@
 
   - 3 / 4 years
   - Learned by doing
-    - pdf scraper for WGI results
+    - pdf scraper 
     - Recommender system
-    - Bitcoin logger
-  - Online resources (see `Reference`)
+    - Bitcoin price logger
   - Not an expert and not a software developer
 </details>
 

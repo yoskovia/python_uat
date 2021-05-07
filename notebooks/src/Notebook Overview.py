@@ -31,7 +31,7 @@ x
 
 # --- 
 
-# You can also start a cell with `!` and use the cell as a terminal (cmd or powershell, this notebook should be using cmd)
+# You can start a cell with `!` and use the cell as a terminal (cmd or powershell, this notebook should be using cmd)
 
 # In[ ]:
 
@@ -39,7 +39,7 @@ x
 get_ipython().system('dir')
 
 
-# You can also save the output of a terminal command into a python variable.
+# You can save the output of a terminal command into a python variable.
 
 # In[ ]:
 
@@ -53,10 +53,37 @@ dir_output = get_ipython().getoutput('dir')
 get_ipython().system('jupyter nbconvert *.ipynb --to python --output-dir=src/')
 
 
-# You can also run javascript, R, SQL, and lots of other languages using this interface.
+# You can run javascript, R, SQL, and lots of other languages using this interface.
 
 # In[ ]:
 
 
 get_ipython().run_cell_magic('javascript', '', "document.title='Tab Updated!'")
+
+
+# HTML works too
+
+# <h1> Here is <span style="color:red">an</span> example table. </h1>
+# <table style="width:100%">
+#   <tr>
+#     <th>Firstname</th>
+#     <th>Lastname</th>
+#     <th>Age</th>
+#   </tr>
+#   <tr>
+#     <td>Jill</td>
+#     <td>Smith</td>
+#     <td>50</td>
+#   </tr>
+#   <tr>
+#     <td>Eve</td>
+#     <td>Jackson</td>
+#     <td>94</td>
+#   </tr>
+# </table>
+
+# In[ ]:
+
+
+
 

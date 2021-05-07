@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Practical Examples of Python
+# # Practical Examples
 
-# ### Formatting Column Names: `AMERICAN_INDIAN_ENROLLMENT` -> `American Indian`
+# ### Formatting Column Names: Turning `AMERICAN_INDIAN_ENROLLMENT` into `American Indian`
 
 # In[ ]:
 
@@ -77,7 +77,13 @@ df['my_name'].apply(clean_name)
 df.assign(cleaned = lambda x: x['my_name'].apply(clean_name))
 
 
-# ### Multiple String Or: Find records where `animals` contains any of the strings in `wanted_animals`
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+
+# ### Multiple String Or: Find records where the `animals` column contains _any_ of the strings in `wanted_animals`
 
 # In[ ]:
 
@@ -103,7 +109,39 @@ print('Output Frame')
 )
 
 
-# ### Table Styling - Read more [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)
+# In[ ]:
+
+
+# Are any of these values true?
+any([False, True])
+
+
+# In[ ]:
+
+
+any([False, False])
+
+
+# In[ ]:
+
+
+# Are all values true?
+all([True, True])
+
+
+# In[ ]:
+
+
+all([False, True])
+
+
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+
+# ### Table Styling
 
 # In[ ]:
 
@@ -134,17 +172,23 @@ gammas.head().style.set_properties(**{
 
 def highlight_max(s):
     """
-    highlight the maximum in a Series green.
+    Highlight the maximum in a Series green.
+    
+    s (pd.Series): Input series
     """
     is_max = s == s.max()
     return ['background-color: green' if v else '' for v in is_max]
 
+
 def highlight_min(s):
     """
-    highlight the minimum in a Series red.
+    Highlight the minimum in a Series red.
+    
+    s (pd.Series): Input series
     """
     is_min = s == s.min()
     return ['background-color: red' if v else '' for v in is_min]
+
 
 (
     gammas.style
@@ -159,37 +203,25 @@ def highlight_min(s):
 disp_tab = gammas.style.set_caption('Here is some text that describes the table.')
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
 
 # ## SQL -> pd.DataFrame
 
 # In[ ]:
 
 
-df = rs('my_file.sql', conn)
+# See local notebook
 
 
-# In[ ]:
-
-
-df = pd.read_sql('select * from Table')
-
-
-# In[ ]:
-
-
-
-
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
 
 # ## Generating Fake Data
 

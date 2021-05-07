@@ -185,9 +185,25 @@ len(fruits)
 
 
 def add_them(a, b):
+    print(f'a = {a}, b = {b}')
     return a + b
 
+
 add_them(1, 3)
+
+
+# In[ ]:
+
+
+# Can also explicitly specify the arguments
+add_them(a=1, b=3)
+
+
+# In[ ]:
+
+
+# If you explictly specify the arguments, the order does not matter
+add_them(b=3, a=1)
 
 
 # In[ ]:
@@ -225,8 +241,18 @@ print(add_them.__doc__)
 help(add_them)
 
 
+# ### Caution!
+
 # In[ ]:
 
 
+def this_shouldnt_work(foo):
+    # The variable asdf doesn't exist, but we will not see an error when we define the function
+    print(asdf)
 
+
+# In[ ]:
+
+
+this_shouldnt_work(1)
 
